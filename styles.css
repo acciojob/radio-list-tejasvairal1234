@@ -1,4 +1,4 @@
 /* Color only the labels of even inputs */
 .input:nth-of-type(even) + label {
-    color: red;
+    color: rgb(84, 84, 84);
 }
