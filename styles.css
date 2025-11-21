@@ -1,4 +1,13 @@
 /* Color only the labels of even inputs */
-.input:nth-of-type(even) + label {
-    color: rgb(255, 0, 0);
+/* Make even-positioned input elements (among inputs) red,
+   and also color their following label red. Use !important so
+   disabled UA styles don't override it. */
+.input:nth-of-type(even) {
+  color: rgb(255, 0, 0) !important;
 }
+
+/* Optional: also color the label text to red for clarity */
+.input:nth-of-type(even) + label {
+  color: rgb(255, 0, 0) !important;
+}
+
